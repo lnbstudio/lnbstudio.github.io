@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="دليل مجتمع Discord وماب رعب الجنوب على Roblox: طريقة الانضمام، قواعد المجتمع، وإرشادات اللعب النظيف.">
+  <title>بوابة المجتمع | Discord × Roblox</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101010;
+      --panel: #191919;
+      --panel-soft: #222222;
+      --line: #353535;
+      --text: #f7f7f7;
+      --muted: #b5b5b5;
+      --violet: #ffffff;
+      --cyan: #ffffff;
+      --red: #ffffff;
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 10% 6%, #ffffff10, transparent 33rem),
+        radial-gradient(ellipse at 94% 34%, #ffffff08, transparent 34rem),
+        linear-gradient(#ffffff03 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff03 1px, transparent 1px), var(--bg);
+      background-size: auto, auto, 48px 48px, 48px 48px, auto;
+      color: var(--text);
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.75;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .shell { width: min(1120px, calc(100% - 36px)); margin-inline: auto; }
+    .topbar { position: sticky; top: 0; z-index: 5; border-bottom: 1px solid #ffffff12; background: #101010ef; backdrop-filter: blur(18px); }
+    .nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 800; }
+    .brand-mark { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid #ffffff35; border-radius: 14px; background: linear-gradient(145deg, #ffffff18, #ffffff08); color: var(--text); font-size: 20px; box-shadow: 0 0 26px #ffffff0c; }
+    .brand small { display: block; color: var(--muted); font-size: 11px; font-weight: 500; }
+    .nav-links { display: flex; gap: 6px; }
+    .nav-links a { padding: 8px 12px; border-radius: 10px; color: var(--muted); font-size: 13px; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--text); background: #ffffff0b; outline: none; }
+    .nav-cta, .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid #ffffff; border-radius: 12px; background: linear-gradient(135deg, #ffffff, #d9d9d9); color: #111111; font-weight: 800; box-shadow: 0 8px 28px #ffffff18; transition: transform .2s, filter .2s, box-shadow .2s; }
+    .nav-cta { padding: 10px 15px; font-size: 12px; }
+    .button { padding: 12px 18px; font-size: 14px; }
+    .nav-cta:hover, .button:hover { transform: translateY(-2px); filter: brightness(1.08); }
+    .hero { padding: 54px 0 34px; }
+    .hero-card { position: relative; isolation: isolate; overflow: hidden; min-height: 410px; padding: clamp(28px, 6vw, 62px); display: flex; align-items: center; border: 1px solid #ffffff25; border-radius: 30px; background: linear-gradient(270deg, #151515f2 0%, #151515e8 48%, #15151572 100%), radial-gradient(ellipse at 79% 45%, #ffffff1b, transparent 35%), linear-gradient(135deg, #242424, #151515 65%, #1b1b1b); box-shadow: 0 28px 100px #0008, inset 0 1px #ffffff0b; }
+    .hero-card::before, .hero-card::after { content: ""; position: absolute; z-index: -1; width: 430px; height: 430px; border: 1px solid #ffffff18; border-radius: 50%; }
+    .hero-card::before { left: -95px; top: -270px; }
+    .hero-card::after { left: 60px; bottom: -355px; width: 550px; height: 550px; }
+    .hero-copy { position: relative; z-index: 0; max-width: 680px; margin-left: 290px; }
+    .hero-copy::after { content: ""; position: absolute; z-index: -1; inset: -110px -90px; background: radial-gradient(ellipse at 55% 50%, #ffffff0c, transparent 67%); animation: blood-haze 9s ease-in-out infinite alternate; pointer-events: none; }
+    @keyframes blood-haze { from { opacity: .35; transform: scale(.94); } to { opacity: .9; transform: scale(1.06); } }
+    .eyebrow, .kicker { color: var(--cyan); font-size: 13px; font-weight: 800; letter-spacing: .6px; }
+    .eyebrow { margin-bottom: 12px; }
+    h1 { margin: 0; font-size: clamp(38px, 6vw, 66px); line-height: 1.25; letter-spacing: -1.5px; }
+    h1 span { color: var(--violet); text-shadow: 0 0 32px #ffffff1c; }
+    .hero p { max-width: 570px; margin: 17px 0 23px; color: #c8c8c8; font-size: 16px; }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .quiet-link { padding: 9px 13px; color: var(--muted); font-size: 12px; }
+    .hero-mark { position: absolute; left: 7%; top: 50%; width: 310px; height: 310px; transform: translateY(-50%); display: grid; place-items: center; border: 1px solid #ffffff35; border-radius: 50%; color: var(--text); text-align: center; background: radial-gradient(circle at 50% 43%, #ffffff17, #191919 58%, #101010 74%); box-shadow: inset 0 0 0 10px #ffffff08, 0 0 80px #ffffff12; }
+    .hero-mark::before, .hero-mark::after { content: ""; position: absolute; border: 1px solid #ffffff20; border-radius: 50%; }
+    .hero-mark::before { inset: 17px; }
+    .hero-mark::after { inset: 34px; border-style: dashed; animation: orbit 45s linear infinite; }
+    .hero-mark-content { position: relative; z-index: 1; padding: 20px; }
+    .hero-mark .moon { display: block; margin-bottom: 8px; color: var(--red); font-size: 38px; filter: drop-shadow(0 0 16px #ffffff70); }
+    .hero-mark strong { display: block; font-size: 30px; line-height: 1.3; }
+    .hero-mark small { display: inline-block; margin-top: 10px; padding: 5px 10px; border: 1px solid #ffffff30; border-radius: 30px; color: #eeeeee; font-size: 10px; letter-spacing: 1px; }
+    .hero-badge { position: absolute; left: 2%; bottom: 35px; padding: 8px 12px; border: 1px solid #ffffff1a; border-radius: 12px; background: #151515d9; color: #eeeeee; font-size: 9px; box-shadow: 0 12px 35px #0007; }
+    .hero-badge span { display: inline-block; width: 7px; height: 7px; margin-inline-end: 6px; border-radius: 50%; background: var(--red); box-shadow: 0 0 12px var(--red); }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    .visitors { margin-top: 8px; }
+    .visitor-card { width: min(100%, 600px); margin-inline: auto; padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; gap: 18px; border: 1px solid #ffffff20; border-radius: 17px; background: linear-gradient(145deg, #1b1b1b, #141414); box-shadow: 0 14px 36px #0003; }
+    .visitor-copy strong { display: block; color: var(--text); font-size: 15px; }
+    .visitor-copy span { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+    .visitor-note { margin: 4px 0 0; color: var(--muted); font-size: 10px; }
+    .visitor-counter { display: block; width: auto; max-width: 100%; height: 28px; }
+    .visitor-error { margin: 0; color: var(--muted); font-size: 12px; }
+    .section { padding: 60px 0; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+    .section-head h2 { margin: 4px 0 0; font-size: clamp(23px, 3.7vw, 32px); line-height: 1.4; }
+    .section-head h2::after { content: ""; display: block; width: 54px; height: 2px; margin-top: 9px; border-radius: 5px; background: var(--red); box-shadow: 0 0 14px #ffffff38; }
+    .section-head p { max-width: 440px; margin: 0; color: var(--muted); font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { position: relative; overflow: hidden; padding: 25px; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(145deg, #202020, #141414); box-shadow: 0 20px 55px #0003, inset 0 1px #ffffff08; transition: transform .25s, border-color .25s, box-shadow .25s; }
+    .card::before { content: ""; position: absolute; width: 180px; height: 180px; left: -110px; top: -110px; border-radius: 50%; background: #ffffff0b; filter: blur(5px); pointer-events: none; }
+    .card:hover { transform: translateY(-5px); border-color: #ffffff60; box-shadow: 0 25px 60px #0005, 0 0 30px #ffffff0a; }
+    .card.roblox { background: linear-gradient(145deg, #202020, #141414); }
+    .card-title { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+    .icon { width: 46px; height: 46px; display: grid; place-items: center; border: 1px solid #ffffff30; border-radius: 15px; background: linear-gradient(145deg, #ffffff15, #ffffff04); font-size: 20px; box-shadow: 0 6px 20px #0003; }
+    .icon, .hero-mark .moon { filter: grayscale(1); }
+    h3 { margin: 0; font-size: 21px; }
+    .card > p { margin: 0 0 15px; color: var(--muted); font-size: 14px; }
+    .steps, .rules { display: grid; gap: 9px; margin: 0; padding: 0; list-style: none; }
+    .steps { counter-reset: step; }
+    .steps li { position: relative; min-height: 48px; padding: 11px 53px 11px 13px; border: 1px solid #ffffff0d; border-radius: 12px; background: #ffffff05; color: #e0e0e0; font-size: 13px; counter-increment: step; }
+    .steps li::before { content: counter(step, decimal-leading-zero); position: absolute; right: 10px; top: 9px; width: 29px; height: 27px; display: grid; place-items: center; border-radius: 9px; background: #ffffff12; color: var(--text); font-weight: 800; font-size: 9px; }
+    .rules { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 15px; }
+    .rules li { padding: 12px 13px; border: 1px solid #ffffff0d; border-radius: 11px; background: #ffffff04; color: #eeeeee; font-size: 12px; transition: border-color .2s, background .2s; }
+    .rules li:hover { border-color: #ffffff45; background: #ffffff08; }
+    .rules li::before { content: "✓"; margin-inline-end: 7px; color: var(--red); font-weight: 900; }
+    .callout { margin-top: 16px; padding: 13px 15px; border: 1px solid #ffffff20; border-radius: 12px; background: linear-gradient(110deg, #ffffff0a, #ffffff03); color: #eeeeee; font-size: 12px; }
+    .placeholder { display: inline-flex; margin-top: 14px; padding: 9px 13px; border: 1px solid #ffffff1a; border-radius: 11px; background: #ffffff08; color: #aaaaaa; font-size: 12px; font-weight: 700; cursor: not-allowed; }
+    .notice { position: relative; overflow: hidden; padding: 30px; border: 1px solid #ffffff25; border-radius: 22px; background: linear-gradient(110deg, #ffffff0c, #191919 55%, #ffffff08); box-shadow: 0 20px 55px #0003; }
+    .notice::after { content: "✦"; position: absolute; left: 28px; top: 50%; transform: translateY(-50%); color: #ffffff12; font-size: 110px; }
+    .notice h2 { margin: 3px 0 5px; font-size: 20px; }
+    .notice p { margin: 0; color: var(--muted); font-size: 14px; }
+    footer { padding: 20px 0 27px; border-top: 1px solid #ffffff10; color: var(--muted); font-size: 12px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 12px; }
+    @media (max-width: 760px) {
+      .nav { min-height: 66px; }
+      .nav-links { gap: 0; }
+      .nav-links a { padding: 7px; font-size: 11px; }
+      .hero-mark { left: 4%; width: 230px; height: 230px; }
+      .hero-mark strong { font-size: 24px; }
+      .hero-copy { margin-left: 210px; }
+      .section-head { align-items: flex-start; flex-direction: column; gap: 5px; }
+    }
+    @media (max-width: 560px) {
+      .shell { width: calc(100% - 28px); }
+      .nav { flex-wrap: wrap; padding: 9px 0; gap: 4px; }
+      .nav-links { order: 3; width: 100%; justify-content: space-between; }
+      .nav-cta { padding: 8px 10px; }
+      .hero { padding-top: 24px; }
+      .hero-card { min-height: 440px; padding: 25px 20px; align-items: flex-start; border-radius: 23px; }
+      .hero-copy { position: relative; z-index: 1; padding-bottom: 95px; }
+      .hero-copy { margin-left: 0; }
+      h1 { font-size: 39px; letter-spacing: -.7px; }
+      .hero p { font-size: 13px; }
+      .hero-mark { top: auto; bottom: -8px; left: 50%; width: 190px; height: 190px; transform: translateX(-50%); opacity: .8; }
+      .hero-mark .moon { font-size: 28px; margin-bottom: 3px; }
+      .hero-mark strong { font-size: 21px; }
+      .hero-mark small { margin-top: 4px; font-size: 8px; }
+      .hero-badge { display: none; }
+      .visitor-card { flex-direction: column; align-items: center; gap: 12px; }
+      .visitor-copy { text-align: center; }
+      .button { padding: 10px 12px; font-size: 12px; }
+      .section { padding: 34px 0; }
+      .grid { grid-template-columns: 1fr; gap: 12px; }
+      .card { padding: 19px; }
+      .steps li { font-size: 12px; }
+      .rules li, .callout { font-size: 11px; }
+      .rules { grid-template-columns: 1fr; }
+      .footer-row { flex-direction: column; gap: 3px; }
+      .notice { padding: 23px; }
+      .notice::after { left: 10px; font-size: 72px; opacity: .7; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="#home" aria-label="بوابة المجتمع، الرئيسية">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>بوابة المجتمع<small>Discord × Roblox</small></span>
+      </a>
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <a href="#discord">مجتمع ديسكورد</a>
+        <a href="#roblox">ماب رعب الجنوب</a>
+        <a href="#rules">القوانين</a>
+      </nav>
+      <a class="nav-cta" href="https://discord.gg/lnb" target="_blank" rel="noopener noreferrer">انضم إلى مجتمعنا <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-card">
+        <div class="hero-copy">
+          <div class="eyebrow">أهلاً بك في مجتمعنا</div>
+          <h1 id="hero-title">عِش أجواء الجنوب،<br><span>واجعل اللعب أجمل.</span></h1>
+          <p>هنا تجد مجتمعنا على ديسكورد، ودليلك إلى ماب «رعب الجنوب» على روبلوكس؛ من الانضمام إلى قواعد اللعب والتواصل.</p>
+          <div class="hero-actions">
+            <a class="button" href="https://discord.gg/lnb" target="_blank" rel="noopener noreferrer">انضم إلى ديسكورد <span aria-hidden="true">↗</span></a>
+            <a class="quiet-link" href="#roblox">اكتشف الماب</a>
+          </div>
+        </div>
+        <div class="hero-mark" aria-label="ماب رعب الجنوب">
+          <div class="hero-mark-content"><span class="moon" aria-hidden="true">☾</span><strong>رعب<br>الجنوب</strong><small>هل أنت مستعد للتجربة؟</small></div>
+        </div>
+        <div class="hero-badge"><span aria-hidden="true"></span> مجتمع يجمعنا • ومغامرة تنتظرك</div>
+      </div>
+    </section>
+
+    <section class="shell visitors" aria-label="إجمالي زيارات الموقع">
+      <div class="visitor-card">
+        <div class="visitor-copy">
+          <strong>إجمالي زيارات الموقع</strong>
+          <span>عداد مشترك للزيارات من جميع الأجهزة.</span>
+          <p class="visitor-note">يحتسب مرات فتح الصفحة، وقد يشمل زيارات متكررة من الشخص نفسه.</p>
+          <p class="visitor-error" id="visitor-error" role="status" hidden>تعذر تحميل العداد مؤقتاً.</p>
+        </div>
+        <img
+          class="visitor-counter"
+          id="visitor-counter"
+          src="https://api.visitorbadge.io/api/visitors?path=south-horror-community-20261024-7f3c9a2e&amp;label=%D8%A5%D8%AC%D9%85%D8%A7%D9%84%D9%8A%20%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D8%B1&amp;labelColor=%23101010&amp;countColor=%23252525&amp;style=flat"
+          alt="عداد إجمالي زيارات الموقع من جميع الأجهزة"
+          loading="eager">
+      </div>
+    </section>
+
+    <section class="section shell" id="discord" aria-labelledby="discord-title">
+      <div class="section-head">
+        <div><div class="kicker">مجتمع ديسكورد</div><h2 id="discord-title">رفاقك بانتظارك في المجتمع</h2></div>
+        <p>انضم إلينا، تعرّف على الأعضاء، واطّلع على إعلانات المجتمع وقواعده من القنوات المخصصة.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-title"><span class="icon" aria-hidden="true">💬</span><h3>ابدأ رحلتك معنا</h3></div>
+          <p>خطوات سريعة للانضمام إلى مجتمعنا على ديسكورد.</p>
+          <ol class="steps">
+            <li>افتح تطبيق ديسكورد وسجّل الدخول إلى حسابك.</li>
+            <li>اضغط زر الدعوة للانتقال إلى صفحة الانضمام.</li>
+            <li>اقرأ القوانين والإعلانات في القنوات المخصصة.</li>
+            <li>أكمل خطوات التحقق أو اختر رتبتك إن طُلب منك ذلك.</li>
+          </ol>
+          <a class="button" href="https://discord.gg/lnb" target="_blank" rel="noopener noreferrer" style="margin-top:14px">ادخل إلى مجتمع ديسكورد <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="card" id="rules">
+          <div class="card-title"><span class="icon" aria-hidden="true">🛡️</span><h3>مجتمعنا أجمل باحترامنا</h3></div>
+          <p>إرشادات عامة تحفظ الودّ والاحترام بين الجميع؛ وتبقى قوانين السيرفر الرسمية هي المرجع.</p>
+          <ul class="rules">
+            <li>عامل الجميع باحترام، وابتعد عن الإساءة والتنمر.</li>
+            <li>تجنّب الإعلانات والرسائل المزعجة أو المتكررة.</li>
+            <li>اختر القناة المناسبة لموضوع رسالتك.</li>
+            <li>حافظ على خصوصيتك ولا تشارك بيانات حسابك.</li>
+            <li>التزم بتوجيهات المشرفين وشروط ديسكورد.</li>
+            <li>أبلغ المشرفين عن المخالفات بهدوء واحترام.</li>
+          </ul>
+          <div class="callout">هذه إرشادات عامة. أرسل القوانين الرسمية للسيرفر لأعرضها هنا كما هي، مع تفاصيل القنوات والرتب.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="roblox" aria-labelledby="roblox-title">
+      <div class="section-head">
+        <div><div class="kicker">مغامرتك على روبلوكس</div><h2 id="roblox-title">هل تجرؤ على دخول رعب الجنوب؟</h2></div>
+        <p>استعد للأجواء، تعرّف على طريقة الدخول، واتبع قواعد اللعب لتستمتع بتجربة عادلة.</p>
+      </div>
+      <div class="grid">
+        <article class="card roblox">
+          <div class="card-title"><span class="icon" aria-hidden="true">🎮</span><h3>ابدأ مغامرتك في الماب</h3></div>
+          <ol class="steps">
+            <li>افتح روبلوكس وسجّل الدخول إلى حسابك.</li>
+            <li>ابحث عن «رعب الجنوب» ضمن تجارب روبلوكس.</li>
+            <li>تحقّق من اسم الماب ومطوّره قبل اختيار اللعبة.</li>
+            <li>اضغط «تشغيل» واتبع التعليمات داخل الماب.</li>
+          </ol>
+          <div class="callout">لم يصلنا رابط الماب المباشر بعد؛ الزر يفتح نتائج البحث عن «رعب الجنوب». أرسل رابط صفحة اللعبة لنضيف دخولاً مباشراً.</div>
+          <a class="button" href="https://www.roblox.com/search/experiences?keyword=%D8%B1%D8%B9%D8%A8%20%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8" target="_blank" rel="noopener noreferrer" style="margin-top:14px">اعثر على الماب في روبلوكس <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="card roblox">
+          <div class="card-title"><span class="icon" aria-hidden="true">🚫</span><h3>العب بشرف… واستمتع</h3></div>
+          <p>التزم بهذه الإرشادات لتحافظ على متعة اللعب وسلامة حسابك.</p>
+          <ul class="rules">
+            <li>يُمنع استخدام الهاكات والسكربتات وأدوات الغش.</li>
+            <li>لا تستغل الثغرات ولا تفسد تجربة الآخرين.</li>
+            <li>احترم اللاعبين وابتعد عن المضايقة والتهديد.</li>
+            <li>لا تنتحل صفة الإدارة أو مطوّر الماب.</li>
+            <li>لا تشارك كلمة مرورك أو بيانات حسابك.</li>
+            <li>اتبع تعليمات المطوّر وأبلغ عن المخالفات.</li>
+          </ul>
+          <div class="callout">مخالفة القواعد قد تعرّضك للطرد أو الحظر، وفق أنظمة الماب وروبلوكس.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" aria-label="استكمال معلومات الدليل">
+      <div class="notice">
+        <div class="kicker">المجتمع والمغامرة في مكان واحد</div>
+        <h2>لقاؤنا يبدأ من ديسكورد… والمغامرة في رعب الجنوب</h2>
+        <p>انضم إلى مجتمعنا، واستعد لخوض تجربة الماب. سنضيف رابط اللعبة المباشر والقوانين الرسمية للسيرفر عند توفرها.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-row">
+      <span>© <span id="year"></span> بوابة المجتمع</span>
+      <span>رفقة طيبة • لعب عادل • احترام متبادل</span>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const visitorCounter = document.getElementById('visitor-counter');
+    const visitorError = document.getElementById('visitor-error');
+    visitorCounter.addEventListener('error', () => {
+      visitorCounter.hidden = true;
+      visitorError.hidden = false;
+      console.error('Unable to load the shared visitor counter.');
+    });
+  </script>
+</body>
+</html>
