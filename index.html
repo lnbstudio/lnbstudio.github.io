@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101010">
-  <meta name="description" content="دليل مجتمع Discord وماب رعب الجنوب على Roblox: طريقة الانضمام، قواعد المجتمع، وإرشادات اللعب النظيف.">
-  <title>بوابة المجتمع | Discord × Roblox</title>
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="رعب الجنوب | مجتمع Discord وماب Roblox: طريقة الانضمام، قواعد المجتمع، وإرشادات اللعب النظيف.">
+  <title>رعب الجنوب | Discord × Roblox</title>
   <style>
     :root {
       color-scheme: dark;
@@ -111,6 +111,7 @@
     .notice::after { content: "✦"; position: absolute; left: 28px; top: 50%; transform: translateY(-50%); color: #ffffff12; font-size: 110px; }
     .notice h2 { margin: 3px 0 5px; font-size: 20px; }
     .notice p { margin: 0; color: var(--muted); font-size: 14px; }
+    .credits p + p { margin-top: 8px; }
     footer { padding: 20px 0 27px; border-top: 1px solid #ffffff10; color: var(--muted); font-size: 12px; }
     .footer-row { display: flex; justify-content: space-between; gap: 12px; }
     @media (max-width: 760px) {
@@ -154,6 +155,116 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     }
+    :root {
+      color-scheme: dark;
+      --bg: #080808;
+      --panel: #111111;
+      --panel-soft: #1b1b1b;
+      --line: #343434;
+      --text: #f7f4f4;
+      --muted: #b7a9aa;
+      --violet: #c4162a;
+      --cyan: #a50e20;
+      --red: #c4162a;
+    }
+    body {
+      background:
+        radial-gradient(ellipse at 9% 12%, #c4162a18, transparent 26rem),
+        radial-gradient(ellipse at 92% 43%, #8f071418, transparent 30rem),
+        linear-gradient(#ffffff04 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff04 1px, transparent 1px), var(--bg);
+      color: var(--text);
+    }
+    .topbar { border-bottom-color: #ffffff18; background: #080808f2; }
+    .brand-mark { border-color: #c4162a35; background: linear-gradient(145deg, #c4162a, #790a18); color: #fff; box-shadow: 0 5px 18px #8f071425; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: #a50e20; background: #c4162a0d; }
+    .nav-cta, .button {
+      border-color: #a50e20;
+      background: linear-gradient(135deg, #c4162a, #8f0714);
+      color: #fff;
+      box-shadow: 0 8px 26px #8f071426;
+    }
+    .hero-card {
+      border-color: #6d101a;
+      background:
+        radial-gradient(ellipse at 14% 55%, #c4162a49, transparent 33%),
+        radial-gradient(ellipse at 66% 20%, #7d10201f, transparent 35%),
+        linear-gradient(115deg, #090909 0%, #171112 55%, #080808 100%);
+      box-shadow: 0 30px 90px #000a, 0 0 50px #c4162a18, inset 0 1px #ffffff12;
+    }
+    .blood-splatter {
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      top: 0;
+      width: min(45%, 440px);
+      height: 100%;
+      color: #ed102d;
+      opacity: .93;
+      filter: drop-shadow(0 0 20px #ed102d70);
+      animation: blood-glow 5s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+    @keyframes blood-glow { from { opacity: .78; filter: drop-shadow(0 0 12px #ed102d55); } to { opacity: 1; filter: drop-shadow(0 0 24px #ff173680); } }
+    .hero-card::before, .hero-card::after { border-color: #ff263c30; }
+    .hero-copy::after { background: radial-gradient(ellipse at 55% 50%, #e20d2b20, transparent 67%); }
+    .eyebrow { color: #ff7b88; }
+    .kicker { color: #ff5264; }
+    .hero h1 { color: #fff; text-shadow: 0 3px 25px #000b; }
+    h1 span { color: #ff263f; text-shadow: 0 0 28px #ff102d80; }
+    .hero p { color: #e2d9da; }
+    .quiet-link { color: #f0d9dc; }
+    .hero-mark {
+      border-color: #ff40566e;
+      color: #fff;
+      background: radial-gradient(circle at 50% 35%, #4c111b 0%, #19090c 58%, #080808 78%);
+      box-shadow: inset 0 0 0 10px #ff263f10, 0 0 70px #bd142c55;
+    }
+    .hero-mark::before, .hero-mark::after { border-color: #ff667438; }
+    .hero-mark .moon { color: #ff263f; filter: drop-shadow(0 0 18px #ff102d); }
+    .hero-mark small { border-color: #ff66745c; color: #ffe4e7; }
+    .hero-badge { border-color: #ffffff28; background: #10090bf2; color: #ffe7e9; }
+    .hero-badge span { background: #ff4054; box-shadow: 0 0 12px #ff4054; }
+    .visitor-card {
+      border-color: #363030;
+      background: linear-gradient(145deg, #171515, #0d0c0c);
+      box-shadow: 0 14px 36px #0005;
+    }
+    .section-head h2::after { background: #c4162a; box-shadow: 0 0 14px #c4162a40; }
+    .card {
+      border-color: #343030;
+      background: linear-gradient(145deg, #191717, #0d0c0c);
+      box-shadow: 0 18px 48px #0006, inset 0 1px #ffffff08;
+    }
+    .card.roblox {
+      border-color: #ead6d6;
+      background: radial-gradient(ellipse at 100% 0%, #c4162a12, transparent 55%), linear-gradient(145deg, #ffffff, #f3eded);
+      color: #241313;
+      box-shadow: 0 18px 48px #0006, inset 0 1px #fff;
+    }
+    .card.roblox h3 { color: #241313; }
+    .card.roblox > p { color: #634f51; }
+    .card.roblox .icon { border-color: #c4162a45; background: linear-gradient(145deg, #fff1f2, #f2dfe1); }
+    .card.roblox .rules li { border-color: #e4d8d9; background: #fffafa; color: #3c292a; }
+    .card.roblox .rules li:hover { border-color: #c4162a70; background: #fff1f2; }
+    .card.roblox .callout { border-color: #e7c7cb; background: #fff0f1; color: #61363c; }
+    .card::before { background: #c4162a0c; }
+    .card:hover { border-color: #c4162a80; box-shadow: 0 24px 55px #590b1418, 0 0 24px #c4162a0c; }
+    .icon { border-color: #c4162a50; background: linear-gradient(145deg, #431018, #241013); box-shadow: 0 6px 18px #0005; }
+    .icon, .hero-mark .moon { filter: none; }
+    .steps li, .rules li {
+      border-color: #393233;
+      background: #211d1e;
+      color: #f0e8e9;
+    }
+    .steps li::before { background: #c4162a24; color: #ff6675; }
+    .rules li:hover { border-color: #c4162a90; background: #35171c; }
+    .rules li::before { color: #ff5968; }
+    .callout { border-color: #612630; background: linear-gradient(110deg, #2a1216, #171112); color: #f0d9dc; }
+    .placeholder { border-color: #393233; background: #211d1e; color: #b7a9aa; }
+    .notice { border-color: #393233; background: linear-gradient(110deg, #1b1819, #241416 55%, #111); box-shadow: 0 20px 55px #0006; }
+    .notice::after { color: #c4162a14; }
+    footer { border-top-color: #ffffff20; }
   </style>
 </head>
 <body>
@@ -161,7 +272,7 @@
     <div class="shell nav">
       <a class="brand" href="#home" aria-label="بوابة المجتمع، الرئيسية">
         <span class="brand-mark" aria-hidden="true">✦</span>
-        <span>بوابة المجتمع<small>Discord × Roblox</small></span>
+        <span>رعب الجنوب<small>مجتمع Discord × Roblox</small></span>
       </a>
       <nav class="nav-links" aria-label="التنقل الرئيسي">
         <a href="#discord">مجتمع ديسكورد</a>
@@ -175,10 +286,28 @@
   <main id="home">
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-card">
+        <svg class="blood-splatter" viewBox="0 0 440 410" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="blood-liquid" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#ff5264"/>
+              <stop offset=".24" stop-color="#f20d2b"/>
+              <stop offset=".68" stop-color="#b5001c"/>
+              <stop offset="1" stop-color="#70000f"/>
+            </linearGradient>
+            <radialGradient id="blood-drop">
+              <stop offset="0" stop-color="#ff7582"/>
+              <stop offset=".42" stop-color="#f20d2b"/>
+              <stop offset="1" stop-color="#970014"/>
+            </radialGradient>
+          </defs>
+          <path fill="url(#blood-liquid)" d="M0 0h440v27c-22-2-22 12-27 31-4 18-16 19-19 1l-7-32-14 2-8 66c-2 20-15 21-19 2l-9-69-22 1-5 29c-3 18-15 19-19 2l-8-30-25 2-5 76c-1 20-14 21-18 2l-9-78-23 1-6 39c-2 18-15 20-18 1l-5-39-27 2-9 65c-2 19-15 20-18 1l-7-64-24 1-6 34c-3 18-15 18-18 0l-4-31-26 1-9 59c-2 18-14 20-17 2L39 29 0 31z"/>
+          <path fill="url(#blood-drop)" d="M48 119c-17 31-15 52 1 72 16-20 17-42-1-72zm101 61c-20 36-18 59 1 80 19-23 18-47-1-80zm126-31c-16 29-14 49 1 68 16-19 15-40-1-68zm101 92c-17 31-15 52 1 72 16-20 16-42-1-72z"/>
+          <ellipse cx="93" cy="96" rx="8" ry="12" fill="url(#blood-drop)"/><ellipse cx="228" cy="108" rx="6" ry="9" fill="url(#blood-drop)"/><ellipse cx="356" cy="133" rx="9" ry="13" fill="url(#blood-drop)"/><ellipse cx="196" cy="287" rx="8" ry="11" fill="url(#blood-drop)"/><ellipse cx="58" cy="251" rx="6" ry="9" fill="url(#blood-drop)"/>
+        </svg>
         <div class="hero-copy">
           <div class="eyebrow">أهلاً بك في مجتمعنا</div>
-          <h1 id="hero-title">عِش أجواء الجنوب،<br><span>واجعل اللعب أجمل.</span></h1>
-          <p>هنا تجد مجتمعنا على ديسكورد، ودليلك إلى ماب «رعب الجنوب» على روبلوكس؛ من الانضمام إلى قواعد اللعب والتواصل.</p>
+          <h1 id="hero-title">لا تدخل وحدك...<br><span>رعب الجنوب ينتظرك.</span></h1>
+          <p>أطفئ الأنوار، شدّ أعصابك، واستعد لمغامرة غامضة. دليلك إلى مجتمعنا وماب «رعب الجنوب» يبدأ من هنا.</p>
           <div class="hero-actions">
             <a class="button" href="https://discord.gg/lnb" target="_blank" rel="noopener noreferrer">انضم إلى ديسكورد <span aria-hidden="true">↗</span></a>
             <a class="quiet-link" href="#roblox">اكتشف الماب</a>
@@ -195,14 +324,14 @@
       <div class="visitor-card">
         <div class="visitor-copy">
           <strong>إجمالي زيارات الموقع</strong>
-          <span>عداد مشترك للزيارات من جميع الأجهزة.</span>
-          <p class="visitor-note">يحتسب مرات فتح الصفحة، وقد يشمل زيارات متكررة من الشخص نفسه.</p>
+          <span>عداد عام يسجّل فتحات الموقع من جميع الأجهزة.</span>
+          <p class="visitor-note">كل فتح للصفحة يُسجّل زيارة، وقد تُحتسب إعادة الزيارة مرة أخرى.</p>
           <p class="visitor-error" id="visitor-error" role="status" hidden>تعذر تحميل العداد مؤقتاً.</p>
         </div>
         <img
           class="visitor-counter"
           id="visitor-counter"
-          src="https://api.visitorbadge.io/api/visitors?path=south-horror-community-20261024-7f3c9a2e&amp;label=%D8%A5%D8%AC%D9%85%D8%A7%D9%84%D9%8A%20%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D8%B1&amp;labelColor=%23101010&amp;countColor=%23252525&amp;style=flat"
+          src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fhmn7719kk1-arch.github.io%2Fsouth-horror-community%2F&amp;label=%D8%A5%D8%AC%D9%85%D8%A7%D9%84%D9%8A%20%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D8%B1&amp;labelColor=%23171112&amp;countColor=%23ed102d&amp;style=flat"
           alt="عداد إجمالي زيارات الموقع من جميع الأجهزة"
           loading="eager">
       </div>
@@ -281,11 +410,19 @@
         <p>انضم إلى مجتمعنا، واستعد لخوض تجربة الماب. سنضيف رابط اللعبة المباشر والقوانين الرسمية للسيرفر عند توفرها.</p>
       </div>
     </section>
+
+    <section class="section shell" aria-label="فريق العمل">
+      <div class="notice credits">
+        <div class="kicker">فريق العمل</div>
+        <h2>مطورو الماب: تركي ونايف</h2>
+        <p>مطور الموقع: فيصل</p>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="shell footer-row">
-      <span>© <span id="year"></span> بوابة المجتمع</span>
+      <span>© <span id="year"></span> رعب الجنوب</span>
       <span>رفقة طيبة • لعب عادل • احترام متبادل</span>
     </div>
   </footer>
